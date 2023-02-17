@@ -1,0 +1,51 @@
+mutation {
+  createNewUser(datos: {
+    name: "German",
+    lastName: "Montalbetti",
+    email: "gmontalbetti@hotmail.com",
+    username: "germanclaudio",
+    password: "admin123"
+
+  }) {
+    id
+  }
+}
+
+query {
+  getUsers {
+    id
+    name
+    lastName
+    email
+    username
+    password
+  }
+}
+
+mutation {
+  updateUser(id: "", input: {
+    nombre: "German Caludio",
+    lastName: "Montalbetti",
+    email: "gmontalbetti@hotmail.com",
+    username: "germanclaudio",
+    password: "admin123"
+  }) {
+    id
+    name
+    lastName
+    email
+    username
+    password
+  }
+}
+
+mutation {
+  deleteUser(id: "") {
+    id
+    name
+    lastName
+    email
+    username
+    password
+  }
+}
